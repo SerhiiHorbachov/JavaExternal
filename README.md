@@ -2,8 +2,7 @@
 
 
 ## Table of contents
-* [General Info](#general-info)
-* [Technologies](#technologies)
+[Task figure] (./src/main/java/javaexternal/figure)
 
 ## General Info
 JavaExternal course repository. 
