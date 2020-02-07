@@ -2,7 +2,7 @@
 
 
 ## Table of contents
-[Task figure] (./src/main/java/javaexternal/figure)
+[Task figure](./src/main/java/javaexternal/figure)
 
 ## General Info
 JavaExternal course repository. 
