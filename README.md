@@ -3,6 +3,7 @@
 
 ## Table of contents
 [Task figure](./src/main/java/javaexternal/figure)
+[Task Java Game MVC](./src/main/java/javaexternal/gamemvc)
 
 ## General Info
 JavaExternal course repository. 
