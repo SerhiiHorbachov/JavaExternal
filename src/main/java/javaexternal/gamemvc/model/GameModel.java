@@ -2,17 +2,12 @@ package javaexternal.gamemvc.model;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
 
-public class Game {
-
-    private final static int DEFAULT_RAND_MIN = 0;
-    private final static int DEFAULT_RAND_MAX = 100;
+public class GameModel {
 
     private int minValue;
     private int maxValue;
-    private int randomNumber;
-    Random r;
+    private int numberToGuess;
 
     List<Integer> previousResponses = new ArrayList();
 
@@ -32,23 +27,19 @@ public class Game {
         this.maxValue = maxValue;
     }
 
-    public int getRandomNumber() {
-        return randomNumber;
+    public int getNumberToGuess() {
+        return numberToGuess;
     }
 
-    public void setRandomNumber(int randomNumber) {
-        this.randomNumber = randomNumber;
+    public void setNumberToGuess(int randomNumber) {
+        this.numberToGuess = randomNumber;
     }
 
-    public void memorizeResponse(int userResponse){
-        previousResponses.add(userResponse);
+    public void addResponse(int response){
+        previousResponses.add(response);
     }
 
     public List<Integer> getPreviousResponses() {
         return previousResponses;
-    }
-
-    public static int getDefaultRandMax() {
-        return DEFAULT_RAND_MAX;
     }
 }
