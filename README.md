@@ -2,8 +2,8 @@
 
 
 ## Completed Tasks
-* [Task figure](./src/main/java/javaexternal/figure)
-* [Task Java Game MVC](./src/main/java/javaexternal/gamemvc)
+* [Task1. Figure](./src/main/java/javaexternal/figure)
+* [Task2. Java Game MVC](./src/main/java/javaexternal/gamemvc)
 
 ## General Info
 JavaExternal course repository. 
