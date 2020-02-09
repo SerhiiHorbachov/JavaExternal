@@ -21,26 +21,27 @@ public class GameController {
         this.view = view;
     }
 
-    public void processUser(Scanner scan){
+    public void processUser(Scanner scan) {
         int tryCount = 0;
 
-        while(true) {
+        while (true) {
             tryCount++;
             view.printRequestToEnterNumber(model.getMinValue(), model.getMaxValue());
             view.printPreviousAttempts(model.getPreviousResponses(), model.getMinValue(), model.getMaxValue());
             int userGuess = getIntFromUser(scan);
             model.addResponse(userGuess);
-            if(model.getNumberToGuess() != userGuess) {
+            if (model.getNumberToGuess() != userGuess) {
                 view.printMessage(GameView.TRY_AGAIN);
-                if(model.getNumberToGuess() < userGuess) {
+                if (model.getNumberToGuess() < userGuess) {
                     view.printMessage(GameView.LESS);
                 } else {
-                    view.printMessage(GameView.GREATER);                }
+                    view.printMessage(GameView.GREATER);
+                }
             } else {
                 break;
             }
 
-            if(tryCount == 1) {
+            if (tryCount == 1) {
                 model.setMinValue(userMinValue);
                 model.setMaxValue(userMaxValue);
                 model.setNumberToGuess(rand(userMinValue, userMaxValue));
