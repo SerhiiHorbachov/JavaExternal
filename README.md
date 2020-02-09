@@ -3,7 +3,7 @@
 
 ## Completed Tasks
 * [Task1. Figure](./src/main/java/javaexternal/figure)
-* [Task2. Java Game MVC](./src/main/java/javaexternal/gamemvc)
+* [Task2. GuessTheNumberGame MVC](./src/main/java/javaexternal/gamemvc)
 * [Task3. Droid Wars] -TBD
 
 ## General Info
