@@ -1,5 +1,5 @@
 # DroidWars
 ## Technologies
-MVC pattern
-Strategy pattern 
-Factory pattern 
+* MVC pattern
+* Strategy pattern 
+* Factory pattern 
