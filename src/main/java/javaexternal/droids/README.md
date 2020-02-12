@@ -1,4 +1,4 @@
-# DroidWars
+# Droids
 ## Technologies
 * MVC pattern
 * Strategy pattern 
