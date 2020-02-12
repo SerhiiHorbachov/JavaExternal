@@ -5,3 +5,6 @@ Factory produces droids that fight in the battle field arena till one of the dro
 * MVC pattern
 * Strategy pattern 
 * Factory pattern 
+
+## UML
+![Droids UML](./droids_uml.png)
