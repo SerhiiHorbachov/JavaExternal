@@ -2,7 +2,7 @@ package ua.externaljava.droid_wars.models.droids;
 
 import ua.externaljava.droid_wars.models.attacks.Attack;
 
-public abstract class BattleDroid extends Droid  {
+public abstract class BattleDroid extends Droid {
 
     private Attack attack;
 
@@ -10,8 +10,8 @@ public abstract class BattleDroid extends Droid  {
         super(energy, health, protection, name);
     }
 
-    public int attack(){
-        if(attack == null){
+    public int attack() {
+        if (attack == null) {
             System.out.println("No Weapon..cannot attack.");
             return 0;
         }
@@ -20,7 +20,7 @@ public abstract class BattleDroid extends Droid  {
         return attack.attack();
     }
 
-    protected void setAttack(Attack attack){
+    protected void setAttack(Attack attack) {
         this.attack = attack;
     }
 
