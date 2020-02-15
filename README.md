@@ -2,8 +2,9 @@
 
 
 ## Completed Tasks
-* [Task figure](./src/main/java/javaexternal/figure)
-* [Task Java Game MVC](./src/main/java/javaexternal/gamemvc)
+* [Task1. Figure](./src/main/java/javaexternal/figure)
+* [TBD Task2. GuessTheNumberGame MVC](./src/main/java/javaexternal/gamemvc)
+* [Task3. Droid Wars](./src/main/java/javaexternal/droids)
 
 ## General Info
 JavaExternal course repository. 
