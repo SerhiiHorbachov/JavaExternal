@@ -8,4 +8,5 @@ public class NanoBattleDroid extends BattleDroid {
         super(energy, health, protection, "NanoBattleDroid");
         setAttack(new NanoLaserAttack());
     }
+
 }

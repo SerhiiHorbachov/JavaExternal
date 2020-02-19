@@ -3,6 +3,8 @@ package ua.externaljava.droid_wars.controller;
 import ua.externaljava.droid_wars.models.droids.BattleDroid;
 import ua.externaljava.droid_wars.view.DroidsView;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class BattleField {
@@ -11,6 +13,7 @@ public class BattleField {
 
     private BattleDroid droid1;
     private BattleDroid droid2;
+    private List<BattleDroid> droids = new ArrayList<>();
     private DroidsView view;
 
     public BattleField(DroidsView view) {

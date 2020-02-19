@@ -78,4 +78,15 @@ public abstract class Droid {
         }
 
     }
+
+    @Override
+    public String toString() {
+        return "Droid{" +
+                "energy=" + energy +
+                ", health=" + health +
+                ", protection=" + protection +
+                ", isAlive=" + isAlive +
+                ", name='" + name + '\'' +
+                '}';
+    }
 }

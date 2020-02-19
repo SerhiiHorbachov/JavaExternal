@@ -14,4 +14,5 @@ public class BigFuckingGunAttack implements Attack {
     public int getEnergyConsumption() {
         return ENERGY_CONSUMPTION;
     }
+
 }

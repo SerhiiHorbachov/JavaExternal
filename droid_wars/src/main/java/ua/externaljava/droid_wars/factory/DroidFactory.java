@@ -12,11 +12,11 @@ public class DroidFactory {
     public BattleDroid createDroid(String type) {
 
         if (type.equals("LightBattleDroid")) {
-            droid = new LightBattleDroid(300, 300, 400);
+            droid = new LightBattleDroid(300, 400, 300);
         } else if (type.equals("NanoBattleDroid")) {
-            droid = new NanoBattleDroid(300, 300, 400);
+            droid = new NanoBattleDroid(300, 500, 200);
         } else if (type.equals("MurdererBattleDroid")) {
-            droid = new MurdererBattleDroid(300, 300, 400);
+            droid = new MurdererBattleDroid(300, 200, 500);
         }
 
         return droid;

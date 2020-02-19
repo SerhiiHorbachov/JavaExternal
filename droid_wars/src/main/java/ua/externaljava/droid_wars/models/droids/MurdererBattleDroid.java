@@ -7,4 +7,6 @@ public class MurdererBattleDroid extends BattleDroid {
         super(energy, health, protection, "MurdererBattleDroid");
         setAttack(new BigFuckingGunAttack());
     }
+
+
 }

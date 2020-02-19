@@ -24,4 +24,10 @@ public abstract class BattleDroid extends Droid {
         this.attack = attack;
     }
 
+    @Override
+    public String toString() {
+        return "BattleDroid{" +
+                "attack=" + attack +
+                "} " + super.toString();
+    }
 }
