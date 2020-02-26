@@ -50,7 +50,7 @@ public class GameController {
             } else if (option == 3) {
                 game.setAuthorizedUser(authorization.userAuthorization());
                 userMenu();
-            } else if (option == 0){
+            } else if (option == 0) {
                 logger.info("Session ended.");
                 System.exit(0);
             }
@@ -131,11 +131,11 @@ public class GameController {
                 } else {
                     break;
                 }
-            } else if(option == 2){
+            } else if (option == 2) {
                 printSwimAbleDroids();
-            } else if(option == 3){
+            } else if (option == 3) {
                 printFlyAbleDroids();
-            } else if(option == 4) {
+            } else if (option == 4) {
                 sortDroidsByEnergy();
             }
         }
@@ -272,19 +272,19 @@ public class GameController {
         Serializator.serializationDroidList(game.getDroids(), SERIALIZATION_FILE_PATH);
     }
 
-    private void printSwimAbleDroids(){
-        for(BattleDroid droid : game.filterSwimAble()){
+    private void printSwimAbleDroids() {
+        for (BattleDroid droid : game.filterSwimAble()) {
             System.out.println(droid);
         }
     }
 
-    private void printFlyAbleDroids(){
-        for(BattleDroid droid : game.filterFlyAble()){
+    private void printFlyAbleDroids() {
+        for (BattleDroid droid : game.filterFlyAble()) {
             System.out.println(droid);
         }
     }
 
-    private void sortDroidsByEnergy(){
+    private void sortDroidsByEnergy() {
         game.sortDroidsByEnergy();
         game.showDroids();
     }

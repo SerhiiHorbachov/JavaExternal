@@ -33,37 +33,34 @@ public class DatabaseManipulator {
     public static boolean checkRecordByEmail(String email) {
         boolean isRegistered = false;
         List<String> lines = null;
-        String [] data = null;
+        String[] data = null;
         File users = new File(FILE_PATH);
 
-        if(users.length()<3){
+        if (users.length() < 3) {
             return isRegistered;
         }
-
-
+        
         try {
             lines = Files.readAllLines(Paths.get(FILE_PATH));
         } catch (IOException e) {
             throw new AccessDatabaseException();
         }
 
-
-
-        for(String line : lines) {
+        for (String line : lines) {
 
             data = line.split(DELIMITER);
 
-                if(data[2].equals(email)){
-                    isRegistered = true;
-                }
+            if (data[2].equals(email)) {
+                isRegistered = true;
             }
+        }
 
         return isRegistered;
     }
 
-    public static String[] getAdminData(String email, String password) throws NoRecordException{
+    public static String[] getAdminData(String email, String password) throws NoRecordException {
         List<String> lines = null;
-        String [] adminData = null;
+        String[] adminData = null;
         boolean isFound = false;
 
         try {
@@ -72,24 +69,24 @@ public class DatabaseManipulator {
             throw new AccessDatabaseException();
         }
 
-        for(String line : lines){
+        for (String line : lines) {
             adminData = line.split(DELIMITER);
 
-            if(adminData[1].equals(ROLE_ADMIN) && adminData[2].equals(email) && adminData[3].equals(password)){
+            if (adminData[1].equals(ROLE_ADMIN) && adminData[2].equals(email) && adminData[3].equals(password)) {
                 isFound = true;
                 break;
             }
         }
 
-        if(!isFound) {
+        if (!isFound) {
             throw new NoRecordException();
         }
         return adminData;
     }
 
-    public static String[] getUserData(String email, String password) throws NoRecordException{
+    public static String[] getUserData(String email, String password) throws NoRecordException {
         List<String> lines = null;
-        String [] userData = null;
+        String[] userData = null;
         boolean isFound = false;
 
         try {
@@ -98,16 +95,16 @@ public class DatabaseManipulator {
             throw new AccessDatabaseException();
         }
 
-        for(String line : lines){
+        for (String line : lines) {
             userData = line.split(DELIMITER);
 
-            if(userData[1].equals(ROLE_USER) && userData[2].equals(email) && userData[3].equals(password)){
+            if (userData[1].equals(ROLE_USER) && userData[2].equals(email) && userData[3].equals(password)) {
                 isFound = true;
                 break;
             }
         }
 
-        if(!isFound) {
+        if (!isFound) {
             throw new NoRecordException();
         }
         return userData;
