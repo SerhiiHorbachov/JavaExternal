@@ -12,5 +12,7 @@
 * v0.4.5 Localization en, ua
 * v0.5 Unit Test
 * v0.6.1 Added 2 interfaces. User can group droids by interfaces. 
-* v0.6.2 Sort by paramenters. User can sort droids by level of energy
+* v0.6.2 Sort by parameters. User can sort droids by level of energy
 * v0.6.3 Inner class Engine added to Droid. 
+* v0.7 Serialization, Deserialization
+* v0.8 Log, Exception
