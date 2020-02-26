@@ -1,4 +1,4 @@
-# DroidWards
+# DroidWars
 
 ## Versions
 * v0.1 Droid war oop
