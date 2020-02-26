@@ -34,12 +34,20 @@ public class DatabaseManipulator {
         boolean isRegistered = false;
         List<String> lines = null;
         String [] data = null;
+        File users = new File(FILE_PATH);
+
+        if(users.length()<3){
+            return isRegistered;
+        }
+
 
         try {
             lines = Files.readAllLines(Paths.get(FILE_PATH));
         } catch (IOException e) {
             throw new AccessDatabaseException();
         }
+
+
 
         for(String line : lines) {
 
