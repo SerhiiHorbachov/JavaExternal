@@ -4,6 +4,7 @@
 ## Completed Tasks
 * [Task2 GuessTheNumberGame MVC](https://github.com/keynod/JavaExternal/tree/master/GuessTheNumber)
 * [Task3. Droid Wars](https://github.com/keynod/JavaExternal/tree/master/DroidWars)
+* [Task4 Shakespeare]()
 
 ## General Info
 JavaExternal course repository. 
