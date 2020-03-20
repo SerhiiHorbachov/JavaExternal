@@ -13,7 +13,7 @@ public class WeatherController {
     private static final String XML_MODE = "xml";
     private static final String JSON_MODE = "json";
     private static final String UNIT_SYSTEM = "metric";
-    private static final String API_KEY = "5d680ca1c469ade9e820fed79073d721";
+    private static final String API_KEY = "";
     private static final String URL_TEMPLATE = "http://api.openweathermap.org/data/2.5/weather?q=%s&appid=%s&units=%s&mode=%s";
 
 
