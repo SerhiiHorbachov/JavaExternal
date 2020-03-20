@@ -5,6 +5,7 @@
 * [Task2 GuessTheNumberGame MVC](https://github.com/keynod/JavaExternal/tree/master/GuessTheNumber)
 * [Task3. Droid Wars](https://github.com/keynod/JavaExternal/tree/master/DroidWars)
 * [Task4 Shakespeare](https://github.com/keynod/JavaExternal/tree/master/Shakespeare)
+* [Task5 Weather](https://github.com/keynod/JavaExternal/tree/master/Weather)
 
 ## General Info
 JavaExternal course repository. 
