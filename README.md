@@ -16,4 +16,5 @@ The repository purpose is to store task completed within external course program
 * JavaCore 
 * git
 * xml 
+* JDBC
 
