@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<device xmlns:xsi="http://www.w3.org/2001/XMLSchema"
+        xmlns="http://www.example.com/device"
+>
+
+    <part>
+        <name>Video Card</name>
+        <origin>Malaysia</origin>
+        <price currency="usd">98</price>
+        <type>
+            <periphery>true</periphery>
+            <energyConsumption units="Watt">34</energyConsumption>
+            <coolerIncluded>true</coolerIncluded>
+            <group>processing</group>
+            <port>USB</port>
+        </type>
+        <critical>true</critical>
+    </part>
+
+    <part>
+        <name>Audio Card</name>
+        <origin>Indonesia</origin>
+        <price currency="eur">23</price>
+        <type>
+            <periphery>false</periphery>
+            <energyConsumption units="Watt">34</energyConsumption>
+            <coolerIncluded>true</coolerIncluded>
+            <group>processing</group>
+            <port>HDMI</port>
+        </type>
+        <critical>false</critical>
+    </part>
+
+    <part>
+        <name>Display</name>
+        <origin>Korea</origin>
+        <price currency="eur">23</price>
+        <type>
+            <periphery>false</periphery>
+            <energyConsumption units="Watt">78</energyConsumption>
+            <coolerIncluded>true</coolerIncluded>
+            <group>processing</group>
+            <port>HDMI</port>
+        </type>
+        <critical>true</critical>
+    </part>
+
+    <part>
+        <name>Motherboard</name>
+        <origin>Thailand</origin>
+        <price currency="eur">45</price>
+        <type>
+            <periphery>true</periphery>
+            <energyConsumption units="Watt">34</energyConsumption>
+            <coolerIncluded>true</coolerIncluded>
+            <group>processing</group>
+            <port>HDMI</port>
+        </type>
+        <critical>false</critical>
+    </part>
+
+</device>

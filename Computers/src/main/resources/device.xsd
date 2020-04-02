@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.example.com/device"
+        xmlns:tns="http://www.example.com/device"
+        elementFormDefault="qualified">
+
+    <element name="device">
+        <complexType>
+            <sequence>
+                <element name="part" type="tns:Part" minOccurs="0" maxOccurs="unbounded"/>
+            </sequence>
+        </complexType>
+    </element>
+
+    <complexType name="Part">
+        <sequence>
+
+            <element name="name" type="string"/>
+            <element name="origin" type="string"/>
+            <element name="price" type="tns:priceType"/>
+            <element name="type" type="tns:Type"/>
+            <element name="critical" type="boolean"/>
+        </sequence>
+    </complexType>
+
+    <complexType name="priceType">
+        <simpleContent>
+            <extension base="positiveInteger">
+                <attribute name="currency" type="string"></attribute>
+            </extension>
+        </simpleContent>
+    </complexType>
+
+    <complexType name="Type">
+        <sequence>
+            <element name="periphery" type="boolean" />
+            <element name="energyConsumption" type="tns:EnergyConsumption"/>
+            <element name="coolerIncluded" type="boolean"/>
+            <element name="group" type="tns:groupType"/>
+            <element name="port" type="tns:portTypes"/>
+        </sequence>
+    </complexType>
+
+    <complexType name="EnergyConsumption">
+        <simpleContent>
+            <extension base="positiveInteger">
+                <attribute name="units" type="string"></attribute>
+            </extension>
+        </simpleContent>
+    </complexType>
+
+    <simpleType name="groupType">
+        <restriction base="string">
+            <enumeration value="input"/>
+            <enumeration value="output"/>
+            <enumeration value="processing"/>
+            <enumeration value="storage"/>
+            <enumeration value="multimedia"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="portTypes">
+        <restriction base="string">
+            <enumeration value="USB"/>
+            <enumeration value="LTP"/>
+            <enumeration value="COM"/>
+            <enumeration value="VGA"/>
+            <enumeration value="HDMI"/>
+            <enumeration value="DVI"/>
+        </restriction>
+    </simpleType>
+
+</schema>
