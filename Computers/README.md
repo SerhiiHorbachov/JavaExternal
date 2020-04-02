@@ -3,7 +3,7 @@ v0.1использовать анотации для валидации поле
 v0.2 использовать ламбда. паттерн Команда
 
 Task7
-1.Database with pattern repository
+1.Database with pattern repository.
 2. использовать БД операции CRUD для работы с xml с Connection pool. 
 
 Задания к главе 14
