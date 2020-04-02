@@ -4,7 +4,7 @@
 
 ## Task7
  - 1.Database with pattern repository. 
- - 2. использовать БД операции CRUD для работы с xml с Connection pool. 
+ - 2.Использовать БД операции CRUD для работы с xml с Connection pool. 
 
 Задания к главе 14
 1. Создать файл XML и соответствующую ему схему XSD.
